@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="dynamic-title">Loading...</title>
+  <script>
+    // Función para actualizar el título con la fecha y hora exactas
+    function updateTitle() {
+      const now = new Date();
+      const formattedDate = now.toLocaleString(); // Formato local de fecha y hora
+      document.title = `Current Time: ${formattedDate}`;
+    }
+
+    // Llama a la función al cargar la página
+    window.onload = updateTitle;
+
+    // Opcional: Actualiza el título cada segundo
+    setInterval(updateTitle, 1000);
+  </script>
 </head>
 <body>
-    
+  <h1>Bienvenido a mi sitio web</h1>
+  <p>El título muestra la fecha y hora exactas.</p>
 </body>
 </html>
