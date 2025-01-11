@@ -1,0 +1,104 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0056b3; /* Azul del header */
+    color: white;
+}
+
+/* Título principal y subtítulo */
+.header-title {
+    display: flex; /* Coloca el título y subtítulo en línea */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 0.5rem; /* Espaciado entre título y subtítulo */
+    padding: 1rem;
+}
+
+.header-title h1 {
+    font-size: 2rem; /* Título principal más grande */
+    font-weight: bold;
+    color: white;
+}
+
+.header-title h2 {
+    font-size: 1.2rem; /* Subtítulo más pequeño */
+    font-weight: normal;
+    color: #ffcc00; /* Amarillo */
+}
+
+/* Navegación */
+.main-menu {
+    width: 100%; /* El menú abarca todo el ancho */
+    background-color: #000; /* Negro */
+}
+
+.navigation {
+    list-style: none;
+    display: flex; /* Flex para alinear los elementos */
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra verticalmente */
+    height: 60px; /* Define la altura del nav */
+    margin: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Espaciado en el texto */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: black; 
+    height: 60px;
+}
+
+/* Main content */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-me {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resources {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
