@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    nav ul {
+        justify-content: flex-start;
+    }
+}
