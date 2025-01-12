@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Joaquin Leiva">
+    <meta name="author" content="Joaquin Leiva">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 Example</title>
 </head>
 <body>
@@ -26,34 +29,62 @@
     <!-- Main content -->
     <main>
         <div class="content">
-            <section class="about-me">
-                <h2>About Me</h2>
-                <p>My name is Joaquin, I was born in Argentina and move to La Serena, Chile almost 8 years ago. I'm married to a wonderful woman named Sheila. We are the parents of three boys, a teenager, a toddler and 2 years ol baby.</p>
-                <br>
-                <p>I enjoy spending time with my wife and kids, learning about business and entrepeneurship and trying to stay up to date with tech stuff. I also love to watch soccer.</p>
-                <br>
-                <p>My goal is to finish my BS degree this year in order to get better oportunities for me and my family.</p>
-                <div class="profile">
-                    <img src="images/profile.jpg" alt="Profile Picture">
-                    <h2>Argentina</h2>
-                    <p>Argentina is a country located in the southern part of South America, known for its diverse geography, ranging from the vast plains of the Pampas to the stunning Andes.</p> 
-                    <p>It is the eighth-largest country in the world and the second-largest in Latin America, with a rich cultural heritage that includes tango, literature, and a strong culinary tradition, particularly beef.</p> 
-                    <p>Argentina is also renowned for its football, being home to legendary players like Diego Maradona and Lionel Messi, and has won multiple FIFA World Cup titles.</p>
+            <section class="card">
+                <div class="card-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="card-container">
+                    <!-- Personal Info- -->
+                    <div class="personal-info">
+                        <p>My name is Joaquin. I was born in Argentina and moved to La Serena, Chile, almost 8 years ago. I’m married to a wonderful woman named Sheila, and we are the parents of three boys: a teenager, a toddler, and a 2-year-old.</p>
+                        <p>I enjoy spending time with my wife and kids, learning about business and entrepreneurship, and staying up-to-date with tech trends. I also love watching soccer.</p>
+                        <p>My goal is to finish my bachelor’s degree this year to secure better opportunities for my family and me.</p>
+                    </div>
+                    <!-- Profiel Img -->
+                    <div class="profile-picture">
+                        <img src="images/profile.jpg" alt="Portrait of Joaquin Leiva">
+                    </div>
+                </div>
+                <!-- Country Info -->
+                <div class="country-info">
+                    <div class="country-flag">
+                        <img src="images/argentina.png" alt="Flag of Argentina">
+                        <i><p>Official Flag of Argentina</p></i>
+                    </div>
+                    <div class="country-details">
+                        <h2>Argentina</h2>
+                        <p>Argentina is a country located in the southern part of South America, known for its diverse geography, ranging from the vast plains of the Pampas to the stunning Andes.</p>
+                        <p>It is the eighth-largest country in the world and the second-largest in Latin America, with a rich cultural heritage that includes tango, literature, and a strong culinary tradition, particularly beef.</p>
+                        <p>Argentina is also renowned for its football, being home to legendary players like Diego Maradona and Lionel Messi, and has won multiple FIFA World Cup titles.</p>
+                    </div>
                 </div>
             </section>
-            <aside class="resources">
-                <h2>Web Dev Resources</h2>
+            
+            <section class="card">
+                <div class="card-title">
+                    <h2>Web Dev Resources</h2>
+                </div>
                 <ul>
-                    <li><a href="#">Dev.to Community</a></li>
-                    <li><a href="#">Smashing Magazine</a></li>
+                    <br>
+                    <br>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+
                 </ul>
-            </aside>
+            </section>
+            
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Rubia Magdalena Francesco | Madagascar</p>
+        <p>&copy; <span id="year"></span> Joaquin Leiva | Argentina</p>
+        <p class="modification">Last modification: <span id="lastModified"></span></p>
+        
     </footer>
 </body>
 </html>

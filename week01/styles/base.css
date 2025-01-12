@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0056b3; /* Azul del header */
+    background-color: #f67b00; /* Naranja del header */
     color: white;
 }
 
@@ -41,7 +41,7 @@ body {
 .header-title h2 {
     font-size: 1.2rem; /* Subtítulo más pequeño */
     font-weight: normal;
-    color: #ffcc00; /* Amarillo */
+    color: #ffffff; /* Blanco */
 }
 
 /* Navegación */
@@ -52,53 +52,153 @@ body {
 
 .navigation {
     list-style: none;
-    display: flex; /* Flex para alinear los elementos */
-    justify-content: space-around; /* Distribuye los elementos uniformemente */
-    align-items: center; /* Centra verticalmente */
-    height: 60px; /* Define la altura del nav */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px; /* Asegura que el nav tenga esta altura fija */
     margin: 0;
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem; /* Espaciado en el texto */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0 1rem; /* Elimina el padding vertical */
+    height: 100%; /* Asegura que el enlace ocupe toda la altura del nav */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    line-height: 60px; /* Ajusta la altura de línea para alinear el texto con el nav */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .navigation a:hover {
     background-color: white;
-    color: black; 
-    height: 60px;
+    color: black;
 }
 
 /* Main content */
 .content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr; 
+    gap: 1rem;
     padding: 2rem;
 }
 
-.about-me {
+
+.card {
     background-color: #f8f8f8;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Permite posicionar la franja */
 }
 
-.resources {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.card-title {
+    background-color: #f67b00; /* Franja de color */
+    color: white;
+    padding: 0.5rem 1rem;
+    position: absolute; /* Posiciona la franja al borde superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Igual ancho que la caja */
+    border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
-/* Footer */
+
+.card-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Contenedor principal */
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Información y foto */
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem; /* Para que no se solape con la franja */
+}
+
+/* Personal Info */
+.personal-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Profile IMG */
+.profile-picture img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Country */
+.country-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.country-flag img {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Nombre del país */
+.country-name {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+/* Línea debajo del nombre */
+.country-name::after {
+    content: "";
+    display: block;
+    width: 50%; 
+    height: 2px;
+    background-color: #0056b3;
+    margin: 0.5rem auto 0; 
+}
+
+.country-details p {
+    margin-bottom: 0.5rem;
+}
+
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
+
 }
+
+.modification {
+    color: yellow;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .country-info {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+}
+
