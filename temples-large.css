@@ -1,0 +1,66 @@
+/* CSS para pantallas grandes */
+body {
+    font-size: 18px;
+}
+
+header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* Separar logo y menú */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Ocultar el menú burger y el botón de cerrar en pantallas grandes */
+.menu-toggle,
+.close-menu {
+    display: none;
+}
+
+/* Asegurar que el menú sea horizontal */
+.nav-links {
+    display: flex; /* Configurar los elementos en una fila horizontal */
+    list-style: none; /* Quitar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem; /* Separar los elementos */
+}
+
+/* Estilo para los enlaces del menú */
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1 1 100%;
+}
+
+/* Configuración del grid para pantallas grandes */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas responsivas */
+    gap: 2rem; /* Espaciado entre las imágenes */
+    margin-top: 2rem;
+}
+
+.grid img {
+    width: 100%; /* Asegura que la imagen se ajuste al tamaño de la celda */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+}
