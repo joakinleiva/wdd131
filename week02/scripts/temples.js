@@ -1,19 +1,26 @@
-// temples.js
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-const menuToggle = document.querySelector('.menu-toggle');
-const closeMenu = document.querySelector('.close-menu');
-const navLinks = document.querySelector('.nav-links');
-
-// Abre el menú desplegable
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.add('active');
-    closeMenu.style.display = 'block';  // Muestra la "X"
-    menuToggle.style.display = 'none'; // Oculta el menú burger
+hamburger.addEventListener("click", () => { 
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
 
-// Cierra el menú desplegable
-closeMenu.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    closeMenu.style.display = 'none';  // Oculta la "X"
-    menuToggle.style.display = 'block'; // Muestra el menú burger
+document.querySelectorAll(".nav-link").forEach(n => {
+    n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    });
 });
+
+
+//Time
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString();
+    document.getElementById("lastModified").textContent = dateTimeString;
+}
+// Update 
+updateDateTime();

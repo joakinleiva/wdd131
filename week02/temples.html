@@ -4,38 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    <link rel="stylesheet" href="temples.css"> 
-    <link rel="stylesheet" href="temples-large.css" media="screen and (min-width: 769px)"> 
+    <link rel="stylesheet" href="styles/temples.css"> 
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>r
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
-        <div class="logo">Temple Album</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Old</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Small</a></li>
-        </ul>
+        <nav class="navbar">
+                <a href="#" class="nav-branding">Temple Album</a>
+            
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link">Old</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link">New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link">Large</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link">Small</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
     </header>
-    
     <main class="main">
         <h1 class="page-title">Home</h1>
         <div class="grid">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
-            <img src="temple-san-diego.jpeg" alt="San Diego California">
+            <img src="images/temple_san_diego.jpg" alt="San Diego California">
+            <img src="images/temple_buenos_aires.jpg" alt="Buenos Aires Argentina">
+            <img src="images/temple_concepcion.jpg" alt="Concepcion Chile">
+            <img src="images/temple_cordoba.jpg" alt="Cordoba Argentina">
+            <img src="images/temple_houston.jpg" alt="Houston Texas">
+            <img src="images/temple_memphis.jpg" alt="Memphis Tennesse">
+            <img src="images/temple_san_diego.jpg" alt="San Diego California">
+            <img src="images/temple_buenos_aires.jpg" alt="Buenos Aires Argentina">
+            <img src="images/temple_concepcion.jpg" alt="Concepcion Chile">
+            <img src="images/temple_cordoba.jpg" alt="Cordoba Argentina">
+            <img src="images/temple_houston.jpg" alt="Houston Texas">
+            <img src="images/temple_memphis.jpg" alt="Memphis Tennesse">
+            <img src="images/temple_san_diego.jpg" alt="San Diego California">
+            <img src="images/temple_buenos_aires.jpg" alt="Buenos Aires Argentina">
+            <img src="images/temple_concepcion.jpg" alt="Concepcion Chile">
+            <img src="images/temple_cordoba.jpg" alt="Cordoba Argentina">
+            <img src="images/temple_houston.jpg" alt="Houston Texas">
+            <img src="images/temple_memphis.jpg" alt="Memphis Tennesse">
+            <img src="images/temple_san_diego.jpg" alt="San Diego California">
+            <img src="images/temple_buenos_aires.jpg" alt="Buenos Aires Argentina">
+            <img src="images/temple_concepcion.jpg" alt="Concepcion Chile">
+            <img src="images/temple_cordoba.jpg" alt="Cordoba Argentina">
+            <img src="images/temple_houston.jpg" alt="Houston Texas">
+            <img src="images/temple_memphis.jpg" alt="Memphis Tennesse">
+            
+            
         </div>
     </main>
-    <script src="temples.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="year"></span> Joaquin Leiva | Argentina</p>
+        <p class="modification">Last modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

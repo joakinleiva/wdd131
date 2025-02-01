@@ -1,84 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: purple;
+    background-color: blue;
     color: white;
-    padding: 1rem;
+    margin: 0; 
+    padding: 0; 
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 0 24px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.menu-toggle {
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: block;
-}
-
-.close-menu {
-    display: none; 
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    color: white;
-}
-
-.nav-links {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    background-color: purple;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.nav-links.active {
+.nav-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 1rem 0;
+.nav-branding {
+    font-size: 2rem;
 }
 
-.main {
-    padding: 1rem;
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 .page-title {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 20px;
 }
-
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr; 
-    gap: 1rem;
-    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
 }
 
 .grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
