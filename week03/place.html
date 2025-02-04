@@ -1,1 +1,62 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Country page">
+        <meta name="author" content="Joaquin Leiva">
+        <!-- JS -->
+        <script src="scripts/place.js" defer></script>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- STYLES -->
+        <link rel="stylesheet" href="styles/place.css">
+        
+        <title>Place(Week03) Joaquin Leiva - WDD 131 - Dynamic Web Fundamentals</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="main-header">
+            <h1>ARGENTINA</h1>
+        </header>
+        <!-- MAIN -->
+        <main>
+            <div class="content">
+                
+                <!-- DATA -->
+                <div class="card-container">
+                    <div class="background-image"></div>
+                    <section class="card">
+                        <h2 class="card-title">Data</h2>
+                        <p><strong>Area:</strong> 2,780,400 sq km</p>
+                        <p><strong>Population:</strong> 45,376,763</p>
+                        <p><strong>Capital:</strong> Buenos Aires</p>
+                        <p><strong>Languages:</strong> Spanish</p>
+                        <p><strong>Currency:</strong> Argentine Peso (ARS)</p>
+                        <p><strong>Time Zone:</strong> ART (UTC -3)</p>
+                        <p><strong>Calling Code:</strong> +54</p>
+                        <p><strong>Internet TLD:</strong> .ar</p>
+                    </section>
+                    
+                    <!-- WEATHER -->
+                    <section class="card">
+                        <h2 class="card-title">Weather</h2>
+                        <img class="weather-icon" src="images/1530391_weather_clouds_sun_sunny_icon.svg">
+                        <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                        <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+                        <p><strong>Wind:</strong> <span id="wind"></span></p>
+                        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                    </section>
+                </div>
+            </div>
+        </main>
+    
+        <!-- FOOTER -->
+        <footer>
+        <p>&copy; <span id="year"></span> Joaquin Leiva | Argentina</p>
+        <p class="modification">Last modification: <span id="lastModified"></span></p>
+    </footer>
+    </body>
+</html>

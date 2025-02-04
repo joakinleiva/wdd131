@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development course. Joaquin Leiva">
+    <meta name="author" content="Joaquin Leiva">
+    <!-- JS -->
+    <script src="scripts/lazyload.js" defer></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <title>Lazy load Joaquin Leiva - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <h1 class="header-lazy">LAZYLOAD</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-grid">
+        
+        <picture>
+            <source srcset="images/messi_01.webp" type="image/webp">
+            <img src="images/messi_01.webp" alt="Messi The Goat - 01" loading="lazy" width="400" height="600">
+        </picture>
+        
+        <picture>
+            <source srcset="images/messi_02.webp" type="image/webp">
+            <img src="images/messi_02.webp" alt="Messi The Goat - 02" loading="lazy" width="400" height="600">
+        </picture>
+        
+        <picture>
+            <source srcset="images/messi_03.webp" type="image/webp">
+            <img src="images/messi_03.webp" alt="Messi The Goat - 03" loading="lazy" width="400" height="600">
+        </picture>
+        
+        <picture>
+            <source srcset="images/messi_04.webp" type="image/webp">
+            <img src="images/messi_04.webp" alt="Messi The Goat - 04" loading="lazy" width="400" height="600">
+        </picture>
+        
+        <picture>
+            <source srcset="images/messi_05.webp" type="image/webp">
+            <img src="images/messi_05.webp" alt="Messi The Goat - 05" loading="lazy" width="400" height="600">
+        </picture>
+        
+        <picture>
+            <source srcset="images/messi_06.webp" type="image/webp">
+            <img src="images/messi_06.webp" alt="Messi The Goat - 06" loading="lazy" width="400" height="600">
+        </picture>
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="year"></span> Joaquin Leiva | Argentina</p>
+        <p class="modification">Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
