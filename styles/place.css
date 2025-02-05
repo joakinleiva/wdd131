@@ -93,6 +93,28 @@ main {
     width: 100%;
 	font-family: var(--font-family);
 }
+
+.card-title-weather {
+    background-color: rgba(108, 172, 228, 0.7); 
+    color: white;
+    padding: 5px;
+    position: relative;
+    left: -25px;
+    width: 100%;
+	font-family: var(--font-family);
+}
+
+.card-title-weather::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/weather-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
 .weather-icon {
 	width: 100px;
 	height: auto;

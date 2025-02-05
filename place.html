@@ -31,7 +31,7 @@
                         <picture>
                             <source srcset="images/argentina_large.webp" media="(min-width: 1000px)">
                             <source srcset="images/argentina_medium.webp" media="(min-width: 550px)">
-                            <img src="images/argentina_small.webp" alt="Argentina Landscape" width="500" height="250">
+                            <img src="images/argentina_small.webp" alt="Argentina Landscape" media="(max-width: 549px)">
                         </picture>
                     </div>
                     <section class="card">
@@ -48,8 +48,9 @@
                     
                     <!-- WEATHER -->
                     <section class="card">
-                        <h2 class="card-title">Weather</h2>
+                        <h2 class="card-title-weather">Weather</h2>
                         <img class="weather-icon" src="images/weather-icon.svg" alt="Weather icon representing the current forecast">
+
                         <p><strong>Temperature:</strong> <span id="temperature"></span></p>
                         <p><strong>Conditions:</strong> <span id="conditions"></span></p>
                         <p><strong>Wind:</strong> <span id="wind"></span></p>
