@@ -72,23 +72,39 @@ a {
     margin: 20px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 15px;
-    justify-content: center;
-    margin: 20px;
-}
-
-.grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 footer {
     background-color: blue;
     color: white;
     text-align: center;
     padding: 15px;
 }
+
+/* TEMPLES */
+
+#temple-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.temple-card h2 {
+    color: navy;
+}
+
+.temple-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-top: 15px;
+    max-height: 200px; 
+}
+

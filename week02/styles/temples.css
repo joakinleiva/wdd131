@@ -72,6 +72,14 @@ a {
     margin: 20px;
 }
 
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -86,9 +94,3 @@ a {
     border-radius: 10px;
 }
 
-footer {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
