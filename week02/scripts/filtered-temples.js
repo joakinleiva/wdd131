@@ -38,6 +38,7 @@ const temples = [
     { templeName: "Denver Colorado", location: "Denver, Colorado, United States", dedicated: "1984", area: 5728, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/denver-colorado-temple/denver-colorado-temple-42455-main.jpg" }
 ];
 
+//Display
 function displayTemples(filteredTemples) {
     container.innerHTML = "";
     filteredTemples.forEach(temple => {
@@ -56,6 +57,7 @@ function displayTemples(filteredTemples) {
 
 displayTemples(temples);
 
+//Filter
 function filterTemples(category) {
     let filtered;
     switch (category) {
