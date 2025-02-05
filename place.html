@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!-- STYLES -->
-        <link rel="stylesheet" href="/wdd131/week03/styles/place.css">
+        <link rel="stylesheet" href="styles/place.css">
         
         <title>Place(Week03) Joaquin Leiva - WDD 131 - Dynamic Web Fundamentals</title>
     </head>
@@ -27,7 +27,13 @@
                 
                 <!-- DATA -->
                 <div class="card-container">
-                    <div class="background-image"></div>
+                    <div class="background-image">
+                        <picture>
+                            <source srcset="path/to/argentina-large.webp" media="(min-width: 1000px)">
+                            <source srcset="path/to/argentina-medium.webp" media="(min-width: 550px)">
+                            <img src="path/to/argentina-small.webp" alt="Argentina Landscape" width="100%" height="100%">
+                        </picture>
+                    </div>
                     <section class="card">
                         <h2 class="card-title">Data</h2>
                         <p><strong>Area:</strong> 2,780,400 sq km</p>
