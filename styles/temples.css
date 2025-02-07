@@ -47,9 +47,8 @@ a {
     transition: 0.7s ease;
 }
 
-.nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.699);
-    
+.nav-link:hover {
+    color: yellow;
 }
 
 .hamburger {
@@ -80,37 +79,18 @@ footer {
     padding: 15px;
 }
 
-/* TEMPLES */
 
-#temple-cards-container {
+.grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
 }
 
-.temple-card {
-    border: 1px solid #ccc;
+.grid img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
 }
 
-.temple-card h2 {
-    color: navy;
-}
-
-.temple-card img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px;
-    margin-top: 15px;
-    max-height: 200px; 
-}
-
-
-.nav-link:focus,
-.nav-link:focus-visible {
-    color: yellow;
-}
