@@ -1,0 +1,120 @@
+:root {
+    --background-color: #000000;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--background-color);
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* TEMPLES */
+
+#temple-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.temple-card h2 {
+    color: navy;
+}
+
+.temple-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-top: 15px;
+    max-height: 200px; 
+}
+
+
+.nav-link:focus,
+.nav-link:focus-visible {
+    color: yellow;
+}
