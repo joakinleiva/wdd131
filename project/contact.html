@@ -9,6 +9,7 @@
         <meta name="author" content="Joaquin Leiva">
         <!-- JS -->
         <script src="scripts/project.js" defer></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
         <!-- GSAP Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" defer></script>
@@ -19,7 +20,8 @@
 
         <!-- STYLES -->
         <link rel="stylesheet" href="styles/project.css">
-        <link rel="stylesheet" href="styles/project.large.css"> 
+        <link rel="stylesheet" href="styles/project-large.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,32 +33,58 @@
 <body>
     <header>
         <nav class="navbar">
-                <a href="#" class="nav-branding">TopSide Signs</a>
-            
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+            <a href="home.html" class="nav-branding">TopSide Signs</a>
+        
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+        
     </header>
     <main class="main">
-        <h1 class="page-title">Filtered Temple</h1>
-        <div id="temple-cards-container"></div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div>
+            <section id="contact" class="contact">
+                <h1>Contact Us</h1>
+                <form class="contact-form">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+        </div>
+
     </main>
 
     <!-- FOOTER -->
@@ -67,7 +95,7 @@
     </footer>
 </body>
 </html>
-
+<!-- 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -119,7 +147,7 @@
         <footer>Hecho con ❤️ usando GSAP</footer>
     </div>
 
-    <!-- GSAP Library -->
+    GSAP Library
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" defer></script>
 
     <script>
@@ -136,4 +164,4 @@
     </script>
 
 </body>
-</html>
+</html> -->
