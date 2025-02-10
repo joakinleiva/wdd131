@@ -24,9 +24,11 @@ function updateDateTime() {
 }
 updateDateTime();
 
+/*
+
 // Temples
 const temples = [
-    { templeName: "Aba Nigeria", location: "Aba, Nigeria", dedicated: "2005", area: 11500, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" },
+    { templeName: imageUrl: "images/porfolio1.webp", },
     { templeName: "Manti Utah", location: "Manti, Utah, United States", dedicated: "1888", area: 74792, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg" },
     { templeName: "Payson Utah", location: "Payson, Utah, United States", dedicated: "2015", area: 96630, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg" },
     { templeName: "Yigo Guam", location: "Yigo, Guam", dedicated: "2020", area: 6861, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg" },
@@ -85,3 +87,6 @@ const countries = ["Canada", "Chili", "Colombia", "Croatia", "Costa Rica"];
 const countriesLong = countries.filter((country) => country.length > 7);
 
 console.log(countriesLong);
+
+
+*/

@@ -1,9 +1,79 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Final Project">
+        <meta name="author" content="Joaquin Leiva">
+        <!-- JS -->
+        <script src="scripts/project.js" defer></script>
+
+        <!-- GSAP Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" defer></script>
+        
+        <!-- FAVICON -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+       
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="styles/project.css">
+        <link rel="stylesheet" href="styles/project.large.css"> 
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <title>Contact - TopSide</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+                <a href="#" class="nav-branding">TopSide Signs</a>
+            
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="page-title">Filtered Temple</h1>
+        <div id="temple-cards-container"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="year"></span> Joaquin Leiva | Argentina</p>
+        <p class="modification">Last modification: <span id="lastModified"></span></p>
+
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animaciones con GSAP</title>
+    <title>Contact - TopSide</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -45,7 +115,7 @@
 
     <div class="content">
         <h1 id="title">Bienvenido a la Galería</h1>
-        <img id="image" src="https://via.placeholder.com/300" alt="Imagen de ejemplo">
+        <img class="image" src="images/portfolio1.webp" alt="Imagen de ejemplo">
         <footer>Hecho con ❤️ usando GSAP</footer>
     </div>
 
@@ -58,10 +128,10 @@
             gsap.to("#title", { opacity: 1, duration: 2 });
 
             // Animación para la imagen (rotate)
-            gsap.to("#image", { opacity: 1, rotation: 360, duration: 2 });
+            gsap.to(".image", { opacity: 1, rotation: 360, duration: 1 });
 
             // Animación para un texto deslizante
-            gsap.from("footer", { x: -200, opacity: 0, duration: 1 });
+            gsap.from("footer", { x: -300, opacity: 0, duration: 1 });
         });
     </script>
 
