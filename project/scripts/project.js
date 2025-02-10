@@ -5,23 +5,23 @@ function updateDateTime() {
 }
 updateDateTime();
 
-// Map
-var map = L.map('map').setView([-29.9058174, -71.2501308], 12); // Coordenadas de La Serena, Coquimbo
+// GALLERY
 
-        // Capa de mapa de OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Marcador
-        L.marker([-29.9058174, -71.2501308]).addTo(map)
-            .bindPopup('La Serena, Coquimbo')
-            .openPopup();
-
-// Gallery
-
+// Rotate
 window.addEventListener('load', () => {
-    gsap.to(".image", { opacity: 1, rotation: 360, duration: 1, stagger: 0.2 });
+    gsap.to(".image img", { opacity: 1, rotation: 360, duration: 1, stagger: 0.2 });
+});
+
+//Zoom
+const images = document.querySelectorAll(".image img");
+images.forEach(image => {
+  image.addEventListener("mouseenter", () => {
+    gsap.to(image, { scale: 1.1, duration: 0.3 }); // Zoom al entrar el mouse
+  });
+  
+  image.addEventListener("mouseleave", () => {
+    gsap.to(image, { scale: 1, duration: 0.3 }); // Zoom vuelve a la normalidad al salir el mouse
+  });
 });
 
 
