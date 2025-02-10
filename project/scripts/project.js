@@ -18,6 +18,11 @@ var map = L.map('map').setView([-29.9058174, -71.2501308], 12); // Coordenadas d
             .bindPopup('La Serena, Coquimbo')
             .openPopup();
 
+// Gallery
+
+window.addEventListener('load', () => {
+    gsap.to(".image", { opacity: 1, rotation: 360, duration: 1, stagger: 0.2 });
+});
 
 
 

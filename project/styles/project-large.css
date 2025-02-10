@@ -57,3 +57,19 @@
         left: 0;
     }
 }
+
+
+
+/* ======= PORTFOLIO PAGE ======= */
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
