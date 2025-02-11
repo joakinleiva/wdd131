@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 });
 // Title
 window.addEventListener('load', () => {
-    gsap.from(".page-title", { x: -300, opacity: 0, duration: 1 });
+    gsap.from(".page-title ", { x: -300, opacity: 0, duration: 1 });
     gsap.to(".page-title", { opacity: 1, duration: 2 });
 });
 // Button

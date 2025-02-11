@@ -73,3 +73,31 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ======= HOME PAGE ======= */
+
+/* CLIENTS */
+
+@media (max-width: 768px) {
+    .client-logos-container {
+        gap: 20px; 
+    }
+    .client-logo {
+        width: 120px;
+        height: 60px;
+    }
+}
+
+
+/* ======= SERVICES PAGE ======= */
+
+@media (max-width: 768px) {
+    .client-logos-container {
+        gap: 20px; 
+        
+    }
+    .client-logo {
+        width: 120px;
+        height: 60px;
+    }
+}

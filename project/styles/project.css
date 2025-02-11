@@ -89,8 +89,7 @@ a {
 .page-title {
     text-align: center;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
     padding: 20px 0;
     
 }
@@ -161,19 +160,59 @@ a {
 
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .item {
-    padding: 20px;
-    background-color: #f0ad4e;
-    border: 1px solid #ccc;
+    position: relative;
+    height: 200px; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+}
+
+.item1 {
+    background-image: url('../images/portfolio1.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.item2 {
+    background-image: url('../images/portfolio4.webp'); 
+    background-size: cover;
+    background-position: center;
 }
 
 .full-width-item {
     grid-column: span 2;
+    background-color: #702963;
+    color: white;
+    padding: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1rem;
+    max-width: 90%;
+}
+
+.full-width-item .overlay {
+    background: rgba(0, 0, 0, 0.3); 
 }
 
 /* CLIENTS */
@@ -268,6 +307,72 @@ a {
 
 /* ======= SERVICES PAGE ======= */
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.card:nth-child(1) {
+    background-image: url('../images/-_services1.jpg');
+}
+.card:nth-child(2) {
+    background-image: url('../images/-_services2.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: url('../images/-_services3.jpg');
+}
+
+.card-title {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-body {
+    padding: 1rem;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-body p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .card {
+        height: 300px;
+    }
+}
 
 
 
