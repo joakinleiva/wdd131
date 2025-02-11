@@ -5,22 +5,31 @@ function updateDateTime() {
 }
 updateDateTime();
 
-// GALLERY
+/* GALLERY */
 
 // Rotate
 window.addEventListener('load', () => {
     gsap.to(".image img", { opacity: 1, rotation: 360, duration: 1, stagger: 0.2 });
 });
-
-//Zoom
+// Title
+window.addEventListener('load', () => {
+    gsap.from(".page-title", { x: -300, opacity: 0, duration: 1 });
+    gsap.to(".page-title", { opacity: 1, duration: 2 });
+});
+// Button
+window.addEventListener('load', () => {
+    gsap.from(".hero-btn", { x: -300, opacity: 0, duration: 1 });
+    gsap.to(".hero-btn", { opacity: 1, duration: 2 });
+});
+// Zoom
 const images = document.querySelectorAll(".image img");
 images.forEach(image => {
   image.addEventListener("mouseenter", () => {
-    gsap.to(image, { scale: 1.1, duration: 0.3 }); // Zoom al entrar el mouse
+    gsap.to(image, { scale: 1.1, duration: 0.3 }); 
   });
   
   image.addEventListener("mouseleave", () => {
-    gsap.to(image, { scale: 1, duration: 0.3 }); // Zoom vuelve a la normalidad al salir el mouse
+    gsap.to(image, { scale: 1, duration: 0.3 }); 
   });
 });
 

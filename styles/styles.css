@@ -25,7 +25,8 @@ footer {
     text-align: center;
 }
 
-/* Media queries para hacer el diseño responsive */
+
+
 @media (min-width: 768px) {
     body {
         grid-template-columns: 1fr 2fr 1fr;
