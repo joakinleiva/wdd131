@@ -1,3 +1,22 @@
+const hamburger = document.querySelector(".hamburger"); //Hamburger
+const navMenu = document.querySelector(".nav-menu"); //Nav Menu
+const navLinks = document.querySelectorAll(".nav-link");//Link
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach(n => {
+    n.addEventListener("click", (event) => {
+        event.preventDefault();
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        filterTemples(event.target.textContent.trim());
+    });
+});
+
+
 // Time
 function updateDateTime() {
     document.getElementById("year").textContent = new Date().getFullYear();

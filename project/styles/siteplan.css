@@ -250,20 +250,20 @@ a {
     object-fit: contain;
 }
 
-/* Animación de movimiento */
+
 @keyframes move-logos {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Mueve el contenedor de los logos hacia la izquierda */
+        transform: translateX(-50%); /
     }
 }
 
-/* Media Query para dispositivos móviles */
+
 @media (max-width: 768px) {
     .client-logos-container {
-        gap: 20px; /* Menor separación en dispositivos móviles */
+        gap: 20px; 
     }
     .client-logo {
         width: 120px;

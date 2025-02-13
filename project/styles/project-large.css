@@ -76,15 +76,28 @@
 
 /* ======= HOME PAGE ======= */
 
-/* CLIENTS */
+
+
 
 @media (max-width: 768px) {
+
+    .grid-layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .client-logos-container {
         gap: 20px; 
     }
     .client-logo {
         width: 120px;
         height: 60px;
+    }
+
+    .nav-menu {
+        background-color: rgba(0, 0, 0, 0.812);
+    }
+
+    .nav-item:hover{
+        background-color: white;
     }
 }
 
