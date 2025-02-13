@@ -52,6 +52,83 @@ images.forEach(image => {
   });
 });
 
+// Clients
+// Array of image paths
+const logos = [
+    "images/logo1.png",
+    "images/logo2.png",
+    "images/logo3.png",
+    "images/logo4.png",
+    "images/logo5.png",
+    "images/logo6.png"
+];
+
+// Function to create logo elements
+function createLogos() {
+    const wrapper = document.querySelector('.client-logos-wrapper');
+    
+    // Add logos twice for continuous scrolling effect
+    logos.forEach(logo => {
+        const logoDiv = document.createElement('div');
+        logoDiv.classList.add('client-logo');
+        const img = document.createElement('img');
+        img.src = logo;
+        img.alt = `Client logo`;
+        logoDiv.appendChild(img);
+        wrapper.appendChild(logoDiv);
+    });
+
+    // Duplicate logos for continuous effect
+    logos.forEach(logo => {
+        const logoDiv = document.createElement('div');
+        logoDiv.classList.add('client-logo');
+        const img = document.createElement('img');
+        img.src = logo;
+        img.alt = `Client logo`;
+        logoDiv.appendChild(img);
+        wrapper.appendChild(logoDiv);
+    });
+}
+
+// Call the function to add logos
+createLogos();
+
+// Add CSS animation for scrolling
+const style = document.createElement('style');
+style.innerHTML = `
+    .client-logos-container {
+        overflow: hidden;
+        width: 100%;
+    }
+    .client-logos-wrapper {
+        display: flex;
+        animation: scrollLeft 30s linear infinite; /* Slower speed */
+    }
+    .client-logo {
+        margin-right: 20px; /* Adjust gap between logos */
+    }
+    .client-logo img {
+        width: 100px; /* Adjust size of logos */
+        height: auto;
+    }
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%); /* Adjust this to the width of the wrapper */
+        }
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+        .client-logo img {
+            width: 60px; /* Smaller size for mobile devices */
+        }
+    }
+`;
+document.head.appendChild(style);
+
 
 
 
